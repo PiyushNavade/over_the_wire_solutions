@@ -10,24 +10,7 @@ The `.bashrc` file has been edited to log you out as soon as you login with ssh.
 `ssh` can be used to not only perform remote login but we can also execute commands while sshing.
 
 ## Solution
-1. I used `ls` command with `ssh` to see if the readme file exists.
-```
-root@7516a139be30:/# ssh bandit18@bandit.labs.overthewire.org -p 2220 ls
-                         _                     _ _ _
-                        | |__   __ _ _ __   __| (_) |_
-                        | '_ \ / _` | '_ \ / _` | | __|
-                        | |_) | (_| | | | | (_| | | |_
-                        |_.__/ \__,_|_| |_|\__,_|_|\__|
-
-
-                      This is an OverTheWire game server.
-            More information on http://www.overthewire.org/wargames
-
-bandit18@bandit.labs.overthewire.org's password:
-readme
-root@7516a139be30:/#
-```
-2. Now that I know that the file exists, I use `cat` to read it, also with `ssh`.
+1. I used `cat` command with `ssh` to read the readme file.
 ```
 root@7516a139be30:/# ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
                          _                     _ _ _
